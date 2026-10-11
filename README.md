@@ -1,2 +1,35 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+# Барна карта коктейлів (Dart, консольний застосунок)
+
+Лабораторна робота, варіант 5. Консольний застосунок для ведення барної карти:
+коктейлі можна додавати вручну або завантажувати з відкритого API,
+дані зберігаються у файл `data.json` і відновлюються під час наступного запуску.
+
+## Використане API
+
+[TheCocktailDB](https://www.thecocktaildb.com/api.php) (без авторизації, тестовий ключ `1` у шляху).
+
+Приклад запиту:
+https://www.thecocktaildb.com/api/json/v1/1/search.php?s=mojito
+
+## Запуск
+
+dart pub get
+dart run bin/main.dart
+
+## Тести
+
+dart test
+
+## Структура проєкту
+
+- `bin/main.dart` — меню та точка входу
+- `lib/models/` — моделі (`Cocktail`, `Category`, `AlcoholType`, `Storable`)
+- `lib/services/` — робота з API
+- `lib/repositories/` — робота з файлом `data.json`
+- `lib/utils/` — пошук і сортування
+- `test/` — модульні тести
+
+## Можливості меню
+
+Показати список, додати, видалити, завантажити з API, пошук за назвою,
+сортування (за назвою або категорією), вихід.

@@ -30,7 +30,7 @@ Future<void> main() async {
       case '6':
         await sortAndShow(items, repository);
       case '0':
-        print('До побачення!');
+        print('Закриваюсь...');
         return;
       default:
         print('Невідомий пункт меню, спробуйте ще раз.');

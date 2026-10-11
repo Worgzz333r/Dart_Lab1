@@ -13,4 +13,15 @@ enum AlcoholType {
         return AlcoholType.optional;
     }
   }
+
+  String get label {
+    switch (this) {
+      case AlcoholType.alcoholic:
+        return 'alcoholic';
+      case AlcoholType.nonAlcoholic:
+        return 'non-alcoholic';
+      case AlcoholType.optional:
+        return 'optional';
+    }
+  }
 }

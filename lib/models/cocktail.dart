@@ -17,7 +17,7 @@ class Cocktail implements Storable {
     required this.ingredients,
   });
 
-  // З нашого data.json
+  // З data.json
   factory Cocktail.fromJson(Map<String, dynamic> json) => Cocktail(
     id: json['id'] as String,
     name: json['name'] as String,
@@ -26,7 +26,7 @@ class Cocktail implements Storable {
     ingredients: (json['ingredients'] as List).map((e) => e as String).toList(),
   );
 
-  // З відповіді TheCocktailDB
+  // З відпов TheCocktailDB
   factory Cocktail.fromApi(Map<String, dynamic> json) {
     final ingredients = <String>[];
     for (var i = 1; i <= 15; i++) {
@@ -53,5 +53,5 @@ class Cocktail implements Storable {
 
   @override
   String toString() =>
-      '#$id $name [$category, ${type.name}] — ${ingredients.join(', ')}';
+      '#$id $name [$category, ${type.label}] — ${ingredients.join(', ')}';
 }

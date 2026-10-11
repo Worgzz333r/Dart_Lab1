@@ -1,1 +1,199 @@
-[]
+[
+  {
+    "id": "15300",
+    "name": "3-Mile Long Island Iced Tea",
+    "category": {
+      "name": "Ordinary Drink"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Gin",
+      "Light rum",
+      "Tequila",
+      "Triple sec",
+      "Vodka",
+      "Coca-Cola",
+      "Sweet and sour",
+      "Bitters",
+      "Lemon"
+    ]
+  },
+  {
+    "id": "17831",
+    "name": "A Furlong Too Late",
+    "category": {
+      "name": "Ordinary Drink"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Light rum",
+      "Ginger beer",
+      "Lemon peel"
+    ]
+  },
+  {
+    "id": "14360",
+    "name": "Absolut Sex",
+    "category": {
+      "name": "Shot"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Absolut Kurant",
+      "Midori melon liqueur",
+      "Cranberry juice",
+      "Sprite"
+    ]
+  },
+  {
+    "id": "15182",
+    "name": "After sex",
+    "category": {
+      "name": "Ordinary Drink"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Vodka",
+      "Creme de Banane",
+      "Orange juice"
+    ]
+  },
+  {
+    "id": "12560",
+    "name": "Afterglow",
+    "category": {
+      "name": "Cocktail"
+    },
+    "type": "nonAlcoholic",
+    "ingredients": [
+      "Grenadine",
+      "Orange juice",
+      "Pineapple juice"
+    ]
+  },
+  {
+    "id": "178336",
+    "name": "Blueberry Mojito",
+    "category": {
+      "name": "Cocktail"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Dark Rum",
+      "Lime Juice",
+      "Sugar",
+      "Blueberries",
+      "Lemon-lime soda"
+    ]
+  },
+  {
+    "id": "17204",
+    "name": "Long Island Iced Tea",
+    "category": {
+      "name": "Ordinary Drink"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Vodka",
+      "Tequila",
+      "Light rum",
+      "Gin",
+      "Coca-Cola",
+      "Lemon peel"
+    ]
+  },
+  {
+    "id": "13196",
+    "name": "Long vodka",
+    "category": {
+      "name": "Ordinary Drink"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Vodka",
+      "Lime",
+      "Angostura bitters",
+      "Tonic water",
+      "Ice"
+    ]
+  },
+  {
+    "id": "178358",
+    "name": "Mango Mojito",
+    "category": {
+      "name": "Cocktail"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Lime",
+      "Mango",
+      "Mint",
+      "White Rum",
+      "Ice",
+      "Soda Water",
+      "Mango"
+    ]
+  },
+  {
+    "id": "11000",
+    "name": "Mojito",
+    "category": {
+      "name": "Cocktail"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Light rum",
+      "Lime",
+      "Sugar",
+      "Mint",
+      "Soda water"
+    ]
+  },
+  {
+    "id": "15841",
+    "name": "Mojito Extra",
+    "category": {
+      "name": "Cocktail"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Mint",
+      "Lemon juice",
+      "Dark rum",
+      "Club soda",
+      "Angostura bitters"
+    ]
+  },
+  {
+    "id": "16984",
+    "name": "Radioactive Long Island Iced Tea",
+    "category": {
+      "name": "Ordinary Drink"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Rum",
+      "Vodka",
+      "Tequila",
+      "Gin",
+      "Triple sec",
+      "Chambord raspberry liqueur",
+      "Midori melon liqueur",
+      "Malibu rum"
+    ]
+  },
+  {
+    "id": "12754",
+    "name": "Sex on the Beach",
+    "category": {
+      "name": "Ordinary Drink"
+    },
+    "type": "alcoholic",
+    "ingredients": [
+      "Vodka",
+      "Peach schnapps",
+      "Cranberry juice",
+      "Orange juice"
+    ]
+  }
+]
