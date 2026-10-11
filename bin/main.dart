@@ -61,8 +61,23 @@ void showList(List<Cocktail> list) {
     print('Список порожній.');
     return;
   }
+  int maxLen(Iterable<String> values) =>
+      values.map((v) => v.length).reduce((a, b) => a > b ? a : b);
+
+  final nameWidth = maxLen(list.map((c) => c.name));
+  final categoryWidth = maxLen(list.map((c) => c.category.name));
+  final typeWidth = maxLen(list.map((c) => c.type.label));
+  final numberWidth = list.length.toString().length;
+
   for (var i = 0; i < list.length; i++) {
-    print('${i + 1}. ${list[i]}');
+    final c = list[i];
+    print(
+      '${(i + 1).toString().padLeft(numberWidth)}.  '
+      '${c.name.padRight(nameWidth)}   '
+      '${c.category.name.padRight(categoryWidth)}   '
+      '${c.type.label.padRight(typeWidth)}   '
+      '${c.ingredients.join(', ')}',
+    );
   }
 }
 
