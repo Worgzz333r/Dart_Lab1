@@ -19,13 +19,12 @@ class Cocktail implements Storable {
 
   // З нашого data.json
   factory Cocktail.fromJson(Map<String, dynamic> json) => Cocktail(
-        id: json['id'] as String,
-        name: json['name'] as String,
-        category: Category.fromJson(json['category'] as Map<String, dynamic>),
-        type: AlcoholType.values.byName(json['type'] as String),
-        ingredients:
-            (json['ingredients'] as List).map((e) => e as String).toList(),
-      );
+    id: json['id'] as String,
+    name: json['name'] as String,
+    category: Category.fromJson(json['category'] as Map<String, dynamic>),
+    type: AlcoholType.values.byName(json['type'] as String),
+    ingredients: (json['ingredients'] as List).map((e) => e as String).toList(),
+  );
 
   // З відповіді TheCocktailDB
   factory Cocktail.fromApi(Map<String, dynamic> json) {
@@ -45,12 +44,12 @@ class Cocktail implements Storable {
 
   @override
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'name': name,
-        'category': category.toJson(),
-        'type': type.name,
-        'ingredients': ingredients,
-      };
+    'id': id,
+    'name': name,
+    'category': category.toJson(),
+    'type': type.name,
+    'ingredients': ingredients,
+  };
 
   @override
   String toString() =>

@@ -84,19 +84,19 @@ Future<void> addCocktail(
     '2' => AlcoholType.nonAlcoholic,
     _ => AlcoholType.optional,
   };
-  final ingredients = readLine('Інгредієнти (через кому): ')
-      .split(',')
-      .map((e) => e.trim())
-      .where((e) => e.isNotEmpty)
-      .toList();
+  final ingredients = readLine(
+    'Інгредієнти (через кому): ',
+  ).split(',').map((e) => e.trim()).where((e) => e.isNotEmpty).toList();
 
-  items.add(Cocktail(
-    id: DateTime.now().millisecondsSinceEpoch.toString(),
-    name: name,
-    category: Category(categoryName.isEmpty ? 'Невідомо' : categoryName),
-    type: type,
-    ingredients: ingredients,
-  ));
+  items.add(
+    Cocktail(
+      id: DateTime.now().millisecondsSinceEpoch.toString(),
+      name: name,
+      category: Category(categoryName.isEmpty ? 'Невідомо' : categoryName),
+      type: type,
+      ingredients: ingredients,
+    ),
+  );
   await repository.save(items);
   print('Додано.');
 }
